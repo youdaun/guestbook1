@@ -8,7 +8,6 @@
 	String password = request.getParameter("password");
 
 	GuestbookDao gbDao = new GuestbookDao();
-	GuestbookVo gvo = gbDao.getGuest(no);
 
 	gbDao.guestDelete(no, password);
 	response.sendRedirect("./addList.jsp");
